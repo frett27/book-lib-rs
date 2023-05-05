@@ -1,4 +1,3 @@
-use yaserde;
 use yaserde::YaDeserialize;
 use yaserde_derive::{YaDeserialize, YaSerialize};
 
@@ -255,11 +254,6 @@ pub enum Track {
     TrackRegisterControlStartDef(TrackRegisterControlStart),
     TrackRegisterControlResetDef(TrackRegisterControlReset),
 }
-impl Default for Track {
-    fn default() -> Track {
-        Track::Unknown
-    }
-}
 
 impl YaDeserialize for Track {
     fn deserialize<R: std::io::Read>(
@@ -293,7 +287,7 @@ impl YaDeserialize for Track {
                 },
             )),
 
-            e => Err(format!("error , unknown type {}", e).into()),
+            e => Err(format!("error , unknown type {}", e)),
         }
     }
 }

@@ -2,6 +2,8 @@
 # Librairie de lecture des fichiers .book
 
 Cette librairie permet la lecture des fichiers .book de cartons d'orgue de barbarie. 
+[APrint ](https://github.com/barrelorgandiscovery/aprintproject)
+[Barrel organ discovery](https://www.barrel-organ-discovery.org/)
 
 Celle ci permet le décodage XML, pour réaliser des lectures /écriture de fichiers.
 

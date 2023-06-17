@@ -493,7 +493,7 @@ mod tests {
       </ns:holes>"#;
 
         use yaserde::de::from_str;
-        
+
         let holes: Holes = from_str(document).unwrap();
         println!("{:?}", holes);
         // assert_eq!(holes.holes[0], Event::Pitch(Pitch { speed: 95, r#type: PitchType::FourSeam, outcome: PitchOutcome::Ball }));

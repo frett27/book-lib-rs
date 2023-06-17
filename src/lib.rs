@@ -5,7 +5,7 @@ use std::{
     io::{Read},
 };
 
-use yaserde::de::{from_reader, from_str};
+use yaserde::de::{from_reader};
 
 
 #[derive(Default, Debug, YaSerialize, YaDeserialize, PartialEq)]

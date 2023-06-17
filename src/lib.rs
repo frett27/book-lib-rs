@@ -1,6 +1,13 @@
 use yaserde::YaDeserialize;
 use yaserde_derive::{YaDeserialize, YaSerialize};
 
+use std::{
+    io::{Read},
+};
+
+use yaserde::de::{from_reader, from_str};
+
+
 #[derive(Default, Debug, YaSerialize, YaDeserialize, PartialEq)]
 #[yaserde(
     prefix = "ns",
@@ -12,7 +19,7 @@ pub struct Holes {
         namespace = "ns: http://barrelorgandiscovery.org/virtualbook/2016"
     )]
     #[yaserde(rename = "hole")]
-    holes: Vec<Hole>,
+    pub holes: Vec<Hole>,
 }
 
 #[derive(Default, Debug, YaSerialize, YaDeserialize, PartialEq)]
@@ -22,11 +29,11 @@ pub struct Holes {
 )]
 pub struct Hole {
     #[yaserde(attribute)]
-    timestamp: u64,
+    pub timestamp: u64,
     #[yaserde(attribute)]
-    length: u64,
+    pub length: u64,
     #[yaserde(attribute)]
-    track: u16,
+    pub track: u16,
 }
 
 #[derive(Default, Debug, YaSerialize, YaDeserialize, PartialEq)]
@@ -39,12 +46,60 @@ pub struct VirtualBook {
         prefix = "ns",
         namespace = "ns: http://barrelorgandiscovery.org/virtualbook/2016"
     )]
-    holes: Holes,
+    pub holes: Holes,
     #[yaserde(
         prefix = "ns",
         namespace = "ns: http://barrelorgandiscovery.org/virtualbook/2016"
     )]
-    scale: Scale,
+    pub scale: Scale,
+}
+
+impl VirtualBook {
+    pub fn min_time(&self) -> Option<u64> {
+        self.holes
+            .holes
+            .iter()
+            .map(|h| h.timestamp + h.length)
+            .reduce(|h, a| h.min(a))
+    }
+
+    pub fn max_time(&self) -> Option<u64> {
+        self.holes
+            .holes
+            .iter()
+            .map(|h| h.timestamp + h.length)
+            .reduce(|h, a| h.max(a))
+    }
+
+    pub fn midi_scale() -> Self {
+        let r = 0..128;
+        let tracks = r
+            .map(|i| {
+                Track::TrackNoteDef(TrackNote {
+                    no: i,
+                    note: "".into(),
+                    pipestopsetname: "default".into(),
+                })
+            })
+            .collect();
+
+        Self {
+            holes: Holes { holes: vec![] },
+            scale: Scale {
+                definition: ScaleDefinition {
+                    speed: 60.0,
+                    width: 128.0,
+                    firsttrackdistance: 0.5,
+                    intertrackdistance: 1.0,
+                    defaulttrackheight: 1.0,
+                    tracks: Tracks { tracks },
+                    scaletype: "".into(),
+                    tracknb: 128,
+                    bookmovefromrighttoleft: false,
+                },
+            },
+        }
+    }
 }
 
 #[derive(Default, Debug, YaSerialize, YaDeserialize, PartialEq)]
@@ -53,7 +108,7 @@ pub struct VirtualBook {
     namespace = "ns: http://barrelorgandiscovery.org/virtualbook/2016"
 )]
 pub struct Scale {
-    definition: ScaleDefinition,
+    pub definition: ScaleDefinition,
 }
 
 #[derive(Default, Debug, YaSerialize, YaDeserialize, PartialEq)]
@@ -67,56 +122,56 @@ pub struct ScaleDefinition {
         prefix = "ns",
         namespace = "ns: http://barrelorgandiscovery.org/virtualbook/2016"
     )]
-    speed: f32,
+    pub speed: f32,
     #[yaserde(child)]
     #[yaserde(
         prefix = "ns",
         namespace = "ns: http://barrelorgandiscovery.org/virtualbook/2016"
     )]
-    width: f32,
+    pub width: f32,
     #[yaserde(child)]
     #[yaserde(
         prefix = "ns",
         namespace = "ns: http://barrelorgandiscovery.org/virtualbook/2016"
     )]
-    firsttrackdistance: f32,
+    pub firsttrackdistance: f32,
     #[yaserde(child)]
     #[yaserde(
         prefix = "ns",
         namespace = "ns: http://barrelorgandiscovery.org/virtualbook/2016"
     )]
-    intertrackdistance: f32,
+    pub intertrackdistance: f32,
     #[yaserde(child)]
     #[yaserde(
         prefix = "ns",
         namespace = "ns: http://barrelorgandiscovery.org/virtualbook/2016"
     )]
-    defaulttrackheight: f32,
+    pub defaulttrackheight: f32,
     #[yaserde(child)]
     #[yaserde(
         prefix = "ns",
         namespace = "ns: http://barrelorgandiscovery.org/virtualbook/2016"
     )]
-    tracks: Tracks,
+    pub tracks: Tracks,
 
     #[yaserde(child)]
     #[yaserde(
         prefix = "ns",
         namespace = "ns: http://barrelorgandiscovery.org/virtualbook/2016"
     )]
-    scaletype: String,
+    pub scaletype: String,
     #[yaserde(child)]
     #[yaserde(
         prefix = "ns",
         namespace = "ns: http://barrelorgandiscovery.org/virtualbook/2016"
     )]
-    tracknb: u16,
+    pub tracknb: u16,
     #[yaserde(child)]
     #[yaserde(
         prefix = "ns",
         namespace = "ns: http://barrelorgandiscovery.org/virtualbook/2016"
     )]
-    bookmovefromrighttoleft: bool,
+    pub bookmovefromrighttoleft: bool,
 }
 
 #[derive(Default, Debug, YaSerialize, YaDeserialize, PartialEq)]
@@ -303,23 +358,16 @@ pub struct TrackNote {
     pipestopsetname: String,
 }
 
-pub fn add(left: usize, right: usize) -> usize {
-    left + right
+pub fn read_book_stream(reader: &mut dyn Read) -> std::io::Result<VirtualBook> {
+    let vb: VirtualBook = from_reader(reader).unwrap();
+    // println!("{:?}", &vb);
+    Ok(vb)
 }
 
 #[cfg(test)]
 mod tests {
-    use std::{fs::File, io::BufReader};
-
-    use yaserde::de::{from_reader, from_str};
 
     use super::*;
-
-    #[test]
-    fn it_works() {
-        let result = add(2, 2);
-        assert_eq!(result, 4);
-    }
 
     #[test]
     fn read_virtualbook() {

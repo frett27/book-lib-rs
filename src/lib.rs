@@ -1,12 +1,9 @@
 use yaserde::YaDeserialize;
 use yaserde_derive::{YaDeserialize, YaSerialize};
 
-use std::{
-    io::{Read},
-};
+use std::io::Read;
 
-use yaserde::de::{from_reader};
-
+use yaserde::de::from_reader;
 
 #[derive(Default, Debug, YaSerialize, YaDeserialize, PartialEq)]
 #[yaserde(
@@ -469,6 +466,8 @@ mod tests {
         </ns:holes>
       </ns:virtualBook>
     "#;
+        use yaserde::de::from_str;
+
         let vb: VirtualBook = from_str(document).unwrap();
         println!("{:?}", vb);
     }
@@ -492,6 +491,9 @@ mod tests {
         <ns:hole timestamp="4525350" length="662106" track="14"/>
         <ns:hole timestamp="4766929" length="277369" track="12"/>
       </ns:holes>"#;
+
+        use yaserde::de::from_str;
+        
         let holes: Holes = from_str(document).unwrap();
         println!("{:?}", holes);
         // assert_eq!(holes.holes[0], Event::Pitch(Pitch { speed: 95, r#type: PitchType::FourSeam, outcome: PitchOutcome::Ball }));
@@ -499,6 +501,9 @@ mod tests {
 
     #[test]
     fn read_file() -> std::io::Result<()> {
+        use std::fs::File;
+        use std::io::BufReader;
+
         let f = File::open("test_save.book")?;
         let reader = BufReader::new(f);
         let _vb: VirtualBook = from_reader(reader).unwrap();

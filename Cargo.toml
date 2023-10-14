@@ -7,8 +7,12 @@ edition = "2021"
 
 [dependencies]
 
+# yaserde = {path = "depends/yaserde/yaserde"}
+# yaserde_derive = {path = "depends/yaserde/yaserde_derive"}
+
 yaserde = "0.8.0"
 yaserde_derive = "0.8.0"
+
 serde = {version = "1.0.160" }
 
 log = "0.4"

@@ -1,7 +1,7 @@
 use yaserde::YaDeserialize;
 use yaserde_derive::{YaDeserialize, YaSerialize};
 
-use std::io::Read;
+use std::{error::Error, io::Read};
 
 use yaserde::de::from_reader;
 
@@ -26,9 +26,9 @@ pub struct Holes {
 )]
 pub struct Hole {
     #[yaserde(attribute)]
-    pub timestamp: u64,
+    pub timestamp: i64,
     #[yaserde(attribute)]
-    pub length: u64,
+    pub length: i64,
     #[yaserde(attribute)]
     pub track: u16,
 }
@@ -52,7 +52,7 @@ pub struct VirtualBook {
 }
 
 impl VirtualBook {
-    pub fn min_time(&self) -> Option<u64> {
+    pub fn min_time(&self) -> Option<i64> {
         self.holes
             .holes
             .iter()
@@ -60,7 +60,7 @@ impl VirtualBook {
             .reduce(|h, a| h.min(a))
     }
 
-    pub fn max_time(&self) -> Option<u64> {
+    pub fn max_time(&self) -> Option<i64> {
         self.holes
             .holes
             .iter()
@@ -75,7 +75,7 @@ impl VirtualBook {
                 Track::TrackNoteDef(TrackNote {
                     no: i,
                     note: "".into(),
-                    pipestopsetname: "default".into(),
+                    pipestopsetname: Some("default".into()),
                 })
             })
             .collect();
@@ -83,6 +83,7 @@ impl VirtualBook {
         Self {
             holes: Holes { holes: vec![] },
             scale: Scale {
+                name: "".into(),
                 definition: ScaleDefinition {
                     speed: 60.0,
                     width: 128.0,
@@ -105,6 +106,8 @@ impl VirtualBook {
     namespace = "ns: http://barrelorgandiscovery.org/virtualbook/2016"
 )]
 pub struct Scale {
+    #[yaserde(attribute)]
+    pub name: String,
     pub definition: ScaleDefinition,
 }
 
@@ -181,22 +184,22 @@ pub struct TrackDrum {
         prefix = "ns",
         namespace = "ns: http://barrelorgandiscovery.org/virtualbook/2016"
     )]
-    no: u16,
+    pub no: u16,
     #[yaserde(
         prefix = "ns",
         namespace = "ns: http://barrelorgandiscovery.org/virtualbook/2016"
     )]
-    delay: f32,
+    pub delay: f32,
     #[yaserde(
         prefix = "ns",
         namespace = "ns: http://barrelorgandiscovery.org/virtualbook/2016"
     )]
-    fixedlength: f32,
+    pub fixedlength: f32,
     #[yaserde(
         prefix = "ns",
         namespace = "ns: http://barrelorgandiscovery.org/virtualbook/2016"
     )]
-    mididef: String,
+    pub mididef: String,
 }
 
 #[derive(Default, Debug, YaSerialize, YaDeserialize, PartialEq)]
@@ -205,9 +208,9 @@ pub struct TrackDrum {
     namespace = "ns: http://barrelorgandiscovery.org/virtualbook/2016"
 )]
 pub struct TrackRegisterControlStart {
-    no: u16,
-    pipestopsetname: String,
-    pipestopnameinset: String,
+    pub no: u16,
+    pub pipestopsetname: String,
+    pub pipestopnameinset: String,
 }
 
 #[derive(Default, Debug, YaSerialize, YaDeserialize, PartialEq)]
@@ -216,8 +219,8 @@ pub struct TrackRegisterControlStart {
     namespace = "ns: http://barrelorgandiscovery.org/virtualbook/2016"
 )]
 pub struct TrackRegisterControlReset {
-    no: u16,
-    resetpipestopsetname: String,
+    pub no: u16,
+    pub resetpipestopsetname: String,
 }
 
 #[derive(Default, Debug, YaSerialize, YaDeserialize, PartialEq)]
@@ -263,19 +266,19 @@ pub struct TrackALL {
         prefix = "ns",
         namespace = "ns: http://barrelorgandiscovery.org/virtualbook/2016"
     )]
-    pipestopsetname: String,
+    pipestopsetname: NullableString,
     #[yaserde(child)]
     #[yaserde(
         prefix = "ns",
         namespace = "ns: http://barrelorgandiscovery.org/virtualbook/2016"
     )]
-    pipestopnameinset: String,
+    pipestopnameinset: NullableString,
     #[yaserde(child)]
     #[yaserde(
         prefix = "ns",
         namespace = "ns: http://barrelorgandiscovery.org/virtualbook/2016"
     )]
-    resetpipestopsetname: String,
+    resetpipestopsetname: NullableString,
     #[yaserde(child)]
     #[yaserde(
         prefix = "ns",
@@ -291,7 +294,40 @@ pub struct TrackALL {
 )]
 pub struct Tracks {
     #[yaserde(rename = "track")]
-    tracks: Vec<Track>,
+    pub tracks: Vec<Track>,
+}
+
+#[derive(Default, Debug, YaSerialize, PartialEq)]
+pub struct NullableString {
+    pub inner_string: Option<String>,
+}
+
+impl YaDeserialize for NullableString {
+    fn deserialize<R: std::io::Read>(
+        reader: &mut yaserde::de::Deserializer<R>,
+    ) -> Result<Self, String> {
+        let mut result = NullableString { inner_string: None };
+        let mut last_characters: Option<String> = None;
+
+        loop {
+            let mut e = reader.peek()?.to_owned();
+            match e {
+                xml::reader::XmlEvent::EndElement { .. } => {
+                    result.inner_string = last_characters;
+                    break;
+                }
+                xml::reader::XmlEvent::Characters(characters) => {
+                    last_characters = Some(characters);
+                }
+                xml::reader::XmlEvent::EndDocument => {
+                    return Err("error while reaing NullableString, reached end of document".into());
+                }
+                _ => {}
+            }
+            e = reader.next_event()?;
+        }
+        Ok(result)
+    }
 }
 
 #[derive(Debug, YaSerialize, PartialEq)]
@@ -302,7 +338,7 @@ pub struct Tracks {
 pub enum Track {
     Unknown,
     TrackNoteDef(TrackNote),
-    TrackDrum(TrackDrum),
+    TrackDrumDef(TrackDrum),
     TrackRegisterControlStartDef(TrackRegisterControlStart),
     TrackRegisterControlResetDef(TrackRegisterControlReset),
 }
@@ -314,7 +350,7 @@ impl YaDeserialize for Track {
         let trackall = TrackALL::deserialize(reader)?;
 
         match trackall.xsitype.as_str() {
-            "ns:TrackDrum" => Ok(Track::TrackDrum(TrackDrum {
+            "ns:TrackDrum" => Ok(Track::TrackDrumDef(TrackDrum {
                 no: trackall.no,
                 delay: trackall.delay,
                 fixedlength: trackall.fixedlength,
@@ -323,23 +359,23 @@ impl YaDeserialize for Track {
             "ns:TrackNoteDef" => Ok(Track::TrackNoteDef(TrackNote {
                 no: trackall.no,
                 note: trackall.note,
-                pipestopsetname: trackall.pipestopsetname,
+                pipestopsetname: trackall.pipestopsetname.inner_string,
             })),
             "ns:TrackRegisterControlStartDef" => Ok(Track::TrackRegisterControlStartDef(
                 TrackRegisterControlStart {
                     no: trackall.no,
-                    pipestopsetname: trackall.pipestopsetname,
-                    pipestopnameinset: trackall.pipestopnameinset,
+                    pipestopsetname: trackall.pipestopsetname.inner_string.unwrap(),
+                    pipestopnameinset: trackall.pipestopnameinset.inner_string.unwrap(),
                 },
             )),
             "ns:TrackRegisterControlResetDef" => Ok(Track::TrackRegisterControlResetDef(
                 TrackRegisterControlReset {
                     no: trackall.no,
-                    resetpipestopsetname: trackall.resetpipestopsetname,
+                    resetpipestopsetname: trackall.resetpipestopsetname.inner_string.unwrap(),
                 },
             )),
 
-            e => Err(format!("error , unknown type {}", e)),
+            e => Err(format!("error , unknown type {:?}", e)),
         }
     }
 }
@@ -350,19 +386,21 @@ impl YaDeserialize for Track {
     namespace = "ns: http://barrelorgandiscovery.org/virtualbook/2016"
 )]
 pub struct TrackNote {
-    no: u16,
-    note: String,
-    pipestopsetname: String,
+    pub no: u16,
+    pub note: String,
+    pub pipestopsetname: Option<String>,
 }
 
-pub fn read_book_stream(reader: &mut dyn Read) -> std::io::Result<VirtualBook> {
-    let vb: VirtualBook = from_reader(reader).unwrap();
-    // println!("{:?}", &vb);
+/// read the virtual book from
+pub fn read_book_stream(reader: &mut dyn Read) -> Result<VirtualBook, Box<dyn Error>> {
+    let vb: VirtualBook = from_reader(reader)?;
     Ok(vb)
 }
 
 #[cfg(test)]
 mod tests {
+
+    use std::{ffi::OsString, fs::File, io::BufReader, path::PathBuf};
 
     use super::*;
 
@@ -496,25 +534,61 @@ mod tests {
 
         let holes: Holes = from_str(document).unwrap();
         println!("{:?}", holes);
-        // assert_eq!(holes.holes[0], Event::Pitch(Pitch { speed: 95, r#type: PitchType::FourSeam, outcome: PitchOutcome::Ball }));
+        assert!(holes.holes.len() == 13);
     }
 
     #[test]
-    fn read_file() -> std::io::Result<()> {
+    fn read_file() -> Result<(), Box<dyn Error>> {
         use std::fs::File;
         use std::io::BufReader;
 
         let f = File::open("test_save.book")?;
         let reader = BufReader::new(f);
-        let _vb: VirtualBook = from_reader(reader).unwrap();
+        let _vb: VirtualBook = from_reader(reader)?;
         // println!("{:?}", &vb);
+
+        assert!(_vb.scale.name == "52 Limonaire");
+
         Ok(())
     }
+
     #[test]
-    fn perfs_reading() -> std::io::Result<()> {
+    fn full_book_regression_and_fuzzy_tests() -> Result<(), Box<dyn Error>> {
+        let mut failed_elements: Vec<(OsString, Box<dyn Error>)> = vec![];
+
+        let book_testimonial = PathBuf::from("book_testimonial");
+        let files_iterator = std::fs::read_dir(&book_testimonial)?;
+        for dir_entry in files_iterator.flatten() {
+            let filename = dir_entry.file_name();
+            if filename
+                .to_ascii_lowercase()
+                .to_string_lossy()
+                .ends_with(".book")
+            {
+                let f = File::open(dir_entry.path())?;
+                println!("reading {:?}", f);
+
+                let mut reader = BufReader::new(f);
+                let vb_result = read_book_stream(&mut reader);
+                if let Err(e) = vb_result {
+                    failed_elements.push((filename.clone(), e));
+                    println!("tests failed on {:?}", &filename);
+                }
+            }
+        }
+
+        if !failed_elements.is_empty() {
+            panic!("failed_elements : {:?}", &failed_elements);
+        }
+
+        Ok(())
+    }
+
+    #[test]
+    fn perfs_reading() -> Result<(), Box<dyn Error>> {
         use microbench::{self, Options};
         let options = Options::default();
-        microbench::bench(&options, "read_file_book", || read_file());
+        microbench::bench(&options, "read_file_book", || read_file().unwrap());
         Ok(())
     }
 }

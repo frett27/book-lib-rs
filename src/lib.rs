@@ -303,6 +303,7 @@ pub struct NullableString {
 }
 
 impl YaDeserialize for NullableString {
+    #[allow(unused_assignments)]
     fn deserialize<R: std::io::Read>(
         reader: &mut yaserde::de::Deserializer<R>,
     ) -> Result<Self, String> {
@@ -512,7 +513,7 @@ mod tests {
     #[test]
     fn read_holes() {
         let document = r#"
-        <ns:holes xmlns:ns="http://barrelorgandiscovery.org/virtualbook/2016">
+      <ns:holes xmlns:ns="http://barrelorgandiscovery.org/virtualbook/2016">
         <ns:hole timestamp="1554824" length="223684" track="12"/>
         <ns:hole timestamp="1697982" length="165526" track="15"/>
         <ns:hole timestamp="1921665" length="371317" track="33"/>
@@ -534,7 +535,7 @@ mod tests {
 
         let holes: Holes = from_str(document).unwrap();
         println!("{:?}", holes);
-        assert!(holes.holes.len() == 13);
+        assert!(holes.holes.len() == 15);
     }
 
     #[test]

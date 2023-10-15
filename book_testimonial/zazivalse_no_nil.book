@@ -1,0 +1,871 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ns:virtualBook title="Valse" xmlns:ns="http://barrelorgandiscovery.org/virtualbook/2016">
+  <ns:metadata>
+    <ns:Author>Zazie</ns:Author>
+    <ns:Arranger xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    <ns:Genre xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    <ns:DesignedInstrumentName>27 / 29 Flutes Jerome</ns:DesignedInstrumentName>
+    <ns:Description xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+  </ns:metadata>
+  <ns:scale name="Raffin 27/29 t">
+    <ns:infos>
+      <ns:contact xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+      <ns:state xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+      <ns:description>Validé par Mr Dabonot :-), complétée par Jean Claude</ns:description>
+    </ns:infos>
+    <ns:definition>
+      <ns:speed>60.0</ns:speed>
+      <ns:width>130.0</ns:width>
+      <ns:firsttrackdistance>5.8</ns:firsttrackdistance>
+      <ns:intertrackdistance>4.2</ns:intertrackdistance>
+      <ns:defaulttrackheight>3.3</ns:defaulttrackheight> 
+      <ns:tracks>
+     
+        <ns:track xsi:type="ns:TrackNoteDef" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <ns:no>0</ns:no>
+          <ns:note>A4</ns:note>
+          
+        </ns:track>
+    
+        <ns:track xsi:type="ns:TrackNoteDef" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <ns:no>1</ns:no>
+          <ns:note>C4</ns:note>
+          
+        </ns:track>
+        <ns:track xsi:type="ns:TrackNoteDef" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <ns:no>2</ns:no>
+          <ns:note>D4</ns:note>
+          
+        </ns:track>
+        <ns:track xsi:type="ns:TrackNoteDef" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <ns:no>3</ns:no>
+          <ns:note>F4</ns:note>
+          
+        </ns:track>
+        <ns:track xsi:type="ns:TrackNoteDef" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <ns:no>4</ns:no>
+          <ns:note>G4</ns:note>
+          
+        </ns:track>
+        <ns:track xsi:type="ns:TrackNoteDef" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <ns:no>5</ns:no>
+          <ns:note>C5</ns:note>
+          
+        </ns:track>
+        <ns:track xsi:type="ns:TrackNoteDef" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <ns:no>6</ns:no>
+          <ns:note>D5</ns:note>
+          
+        </ns:track>
+        <ns:track xsi:type="ns:TrackNoteDef" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <ns:no>7</ns:no>
+          <ns:note>E5</ns:note>
+          
+        </ns:track>
+        <ns:track xsi:type="ns:TrackNoteDef" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <ns:no>8</ns:no>
+          <ns:note>F5</ns:note>
+          
+        </ns:track>
+        <ns:track xsi:type="ns:TrackNoteDef" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <ns:no>9</ns:no>
+          <ns:note>F#5</ns:note>
+          
+        </ns:track>
+        <ns:track xsi:type="ns:TrackNoteDef" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <ns:no>10</ns:no>
+          <ns:note>G5</ns:note>
+          
+        </ns:track>
+        <ns:track xsi:type="ns:TrackNoteDef" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <ns:no>11</ns:no>
+          <ns:note>A5</ns:note>
+          
+        </ns:track>
+        <ns:track xsi:type="ns:TrackNoteDef" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <ns:no>12</ns:no>
+          <ns:note>A#5</ns:note>
+          
+        </ns:track>
+        <ns:track xsi:type="ns:TrackNoteDef" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <ns:no>13</ns:no>
+          <ns:note>B5</ns:note>
+          
+        </ns:track>
+        <ns:track xsi:type="ns:TrackNoteDef" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <ns:no>14</ns:no>
+          <ns:note>C6</ns:note>
+          
+        </ns:track>
+        <ns:track xsi:type="ns:TrackNoteDef" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <ns:no>15</ns:no>
+          <ns:note>C#6</ns:note>
+          
+        </ns:track>
+        <ns:track xsi:type="ns:TrackNoteDef" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <ns:no>16</ns:no>
+          <ns:note>D6</ns:note>
+          
+        </ns:track>
+
+         
+        <ns:track xsi:type="ns:TrackNoteDef" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <ns:no>17</ns:no>
+          <ns:note>D#6</ns:note>
+          
+        </ns:track>
+        <ns:track xsi:type="ns:TrackNoteDef" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <ns:no>18</ns:no>
+          <ns:note>E6</ns:note>
+          
+        </ns:track>
+        <ns:track xsi:type="ns:TrackNoteDef" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <ns:no>19</ns:no>
+          <ns:note>F6</ns:note>
+          
+        </ns:track>
+        <ns:track xsi:type="ns:TrackNoteDef" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <ns:no>20</ns:no>
+          <ns:note>F#6</ns:note>
+          
+        </ns:track>
+        <ns:track xsi:type="ns:TrackNoteDef" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <ns:no>21</ns:no>
+          <ns:note>G6</ns:note>
+          
+        </ns:track>
+        <ns:track xsi:type="ns:TrackNoteDef" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <ns:no>22</ns:no>
+          <ns:note>G#6</ns:note>
+          
+        </ns:track>
+        <ns:track xsi:type="ns:TrackNoteDef" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <ns:no>23</ns:no>
+          <ns:note>A6</ns:note>
+          
+        </ns:track>
+        <ns:track xsi:type="ns:TrackNoteDef" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <ns:no>24</ns:no>
+          <ns:note>A#6</ns:note>
+          
+        </ns:track>
+        <ns:track xsi:type="ns:TrackNoteDef" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <ns:no>25</ns:no>
+          <ns:note>B6</ns:note>
+          
+        </ns:track>
+        <ns:track xsi:type="ns:TrackNoteDef" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <ns:no>26</ns:no>
+          <ns:note>C7</ns:note>
+          
+        </ns:track>
+        <ns:track xsi:type="ns:TrackNoteDef" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <ns:no>27</ns:no>
+          <ns:note>D7</ns:note>
+          
+        </ns:track>
+
+        
+        <ns:track xsi:type="ns:TrackNoteDef" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <ns:no>28</ns:no>
+          <ns:note>G#5</ns:note>
+          
+        </ns:track>
+        
+      </ns:tracks>
+      
+      <ns:scaletype>paper</ns:scaletype> 
+      <ns:tracknb>29</ns:tracknb> 
+    </ns:definition>
+  </ns:scale>
+  <ns:holes>
+    <ns:hole timestamp="4753120" length="389600" track="7"/>
+    <ns:hole timestamp="5212848" length="420768" track="18"/>
+    <ns:hole timestamp="5220640" length="444144" track="1"/>
+    <ns:hole timestamp="5660888" length="97400" track="5"/>
+    <ns:hole timestamp="5660888" length="105192" track="11"/>
+    <ns:hole timestamp="5664784" length="275099" track="16"/>
+    <ns:hole timestamp="6023216" length="292200" track="16"/>
+    <ns:hole timestamp="6116720" length="381808" track="11"/>
+    <ns:hole timestamp="6120616" length="377912" track="5"/>
+    <ns:hole timestamp="6366064" length="132464" track="13"/>
+    <ns:hole timestamp="6584240" length="459728" track="3"/>
+    <ns:hole timestamp="6584240" length="294579" track="14"/>
+    <ns:hole timestamp="6962152" length="294393" track="14"/>
+    <ns:hole timestamp="7047864" length="74024" track="5"/>
+    <ns:hole timestamp="7047864" length="81816" track="11"/>
+    <ns:hole timestamp="7339878" length="417058" track="14"/>
+    <ns:hole timestamp="7502931" length="382573" track="5"/>
+    <ns:hole timestamp="7512813" length="376587" track="11"/>
+    <ns:hole timestamp="7951736" length="471416" track="2"/>
+    <ns:hole timestamp="7951736" length="432456" track="26"/>
+    <ns:hole timestamp="8415360" length="97400" track="8"/>
+    <ns:hole timestamp="8419256" length="89608" track="11"/>
+    <ns:hole timestamp="8419256" length="162115" track="25"/>
+    <ns:hole timestamp="8664704" length="29651" track="25"/>
+    <ns:hole timestamp="8777688" length="272720" track="25"/>
+    <ns:hole timestamp="8871192" length="381808" track="11"/>
+    <ns:hole timestamp="8875088" length="374016" track="8"/>
+    <ns:hole timestamp="9101056" length="175320" track="22"/>
+    <ns:hole timestamp="9319232" length="416872" track="2"/>
+    <ns:hole timestamp="9327024" length="405184" track="23"/>
+    <ns:hole timestamp="9775064" length="85712" track="7"/>
+    <ns:hole timestamp="9778960" length="93504" track="13"/>
+    <ns:hole timestamp="9782856" length="424664" track="22"/>
+    <ns:hole timestamp="10227000" length="397392" track="7"/>
+    <ns:hole timestamp="10234792" length="393496" track="13"/>
+    <ns:hole timestamp="10234792" length="362328" track="18"/>
+    <ns:hole timestamp="10694520" length="53027" track="1"/>
+    <ns:hole timestamp="10706208" length="41339" track="18"/>
+    <ns:hole timestamp="10830880" length="335056" track="1"/>
+    <ns:hole timestamp="10830880" length="314064" track="18"/>
+    <ns:hole timestamp="11174590" length="86468" track="11"/>
+    <ns:hole timestamp="11177061" length="74115" track="5"/>
+    <ns:hole timestamp="11181520" length="267307" track="16"/>
+    <ns:hole timestamp="11532160" length="253240" track="16"/>
+    <ns:hole timestamp="11625664" length="397392" track="5"/>
+    <ns:hole timestamp="11625664" length="397392" track="11"/>
+    <ns:hole timestamp="11847736" length="179216" track="13"/>
+    <ns:hole timestamp="12089288" length="286787" track="14"/>
+    <ns:hole timestamp="12093184" length="428560" track="3"/>
+    <ns:hole timestamp="12459408" length="290050" track="14"/>
+    <ns:hole timestamp="12556808" length="66232" track="5"/>
+    <ns:hole timestamp="12572894" length="81527" track="11"/>
+    <ns:hole timestamp="12832791" length="130936" track="14"/>
+    <ns:hole timestamp="13000952" length="374016" track="5"/>
+    <ns:hole timestamp="13018078" length="352994" track="11"/>
+    <ns:hole timestamp="13032901" length="165524" track="16"/>
+    <ns:hole timestamp="13226920" length="163632" track="18"/>
+    <ns:hole timestamp="13437304" length="475312" track="4"/>
+    <ns:hole timestamp="13452888" length="275099" track="13"/>
+    <ns:hole timestamp="13811320" length="294579" track="13"/>
+    <ns:hole timestamp="13897032" length="89608" track="6"/>
+    <ns:hole timestamp="13900928" length="89608" track="10"/>
+    <ns:hole timestamp="14189232" length="286787" track="13"/>
+    <ns:hole timestamp="14360656" length="385704" track="6"/>
+    <ns:hole timestamp="14360656" length="385704" track="10"/>
+    <ns:hole timestamp="14559352" length="278995" track="13"/>
+    <ns:hole timestamp="14824280" length="255619" track="4"/>
+    <ns:hole timestamp="14921680" length="158219" track="13"/>
+    <ns:hole timestamp="15163232" length="112984" track="4"/>
+    <ns:hole timestamp="15163232" length="171424" track="13"/>
+    <ns:hole timestamp="15276216" length="85712" track="10"/>
+    <ns:hole timestamp="15284008" length="74024" track="6"/>
+    <ns:hole timestamp="15739840" length="393496" track="7"/>
+    <ns:hole timestamp="15743736" length="385704" track="6"/>
+    <ns:hole timestamp="16199568" length="463624" track="1"/>
+    <ns:hole timestamp="16226025" length="382623" track="18"/>
+    <ns:hole timestamp="16655400" length="89608" track="5"/>
+    <ns:hole timestamp="16659296" length="81816" track="11"/>
+    <ns:hole timestamp="16663192" length="275099" track="16"/>
+    <ns:hole timestamp="17021624" length="261032" track="16"/>
+    <ns:hole timestamp="17107336" length="138739" track="5"/>
+    <ns:hole timestamp="17119024" length="127051" track="11"/>
+    <ns:hole timestamp="17329408" length="167528" track="5"/>
+    <ns:hole timestamp="17329408" length="175320" track="11"/>
+    <ns:hole timestamp="17348888" length="179216" track="13"/>
+    <ns:hole timestamp="17570960" length="459728" track="3"/>
+    <ns:hole timestamp="17574856" length="304598" track="14"/>
+    <ns:hole timestamp="17962787" length="268976" track="14"/>
+    <ns:hole timestamp="18046784" length="93879" track="5"/>
+    <ns:hole timestamp="18056666" length="83997" track="11"/>
+    <ns:hole timestamp="18268344" length="58440" track="13"/>
+    <ns:hole timestamp="18315096" length="459728" track="14"/>
+    <ns:hole timestamp="18493945" length="378279" track="5"/>
+    <ns:hole timestamp="18506297" length="369823" track="11"/>
+    <ns:hole timestamp="18938456" length="488103" track="2"/>
+    <ns:hole timestamp="18946248" length="424664" track="26"/>
+    <ns:hole timestamp="19413768" length="74024" track="8"/>
+    <ns:hole timestamp="19413768" length="74024" track="11"/>
+    <ns:hole timestamp="19417664" length="-5413" track="25"/>
+    <ns:hole timestamp="19495584" length="212763" track="25"/>
+    <ns:hole timestamp="19791680" length="253240" track="25"/>
+    <ns:hole timestamp="19877392" length="366224" track="8"/>
+    <ns:hole timestamp="19877392" length="366224" track="11"/>
+    <ns:hole timestamp="20103360" length="171424" track="22"/>
+    <ns:hole timestamp="20325822" length="471026" track="2"/>
+    <ns:hole timestamp="20329328" length="389600" track="23"/>
+    <ns:hole timestamp="20781264" length="416872" track="22"/>
+    <ns:hole timestamp="20785160" length="81816" track="13"/>
+    <ns:hole timestamp="20789056" length="77920" track="7"/>
+    <ns:hole timestamp="21225408" length="389600" track="7"/>
+    <ns:hole timestamp="21225408" length="393496" track="13"/>
+    <ns:hole timestamp="21229304" length="354536" track="18"/>
+    <ns:hole timestamp="21692928" length="480829" track="1"/>
+    <ns:hole timestamp="21704616" length="404908" track="18"/>
+    <ns:hole timestamp="22156463" length="83997" track="5"/>
+    <ns:hole timestamp="22158934" length="93879" track="11"/>
+    <ns:hole timestamp="22158934" length="280509" track="16"/>
+    <ns:hole timestamp="22522776" length="241552" track="16"/>
+    <ns:hole timestamp="22608488" length="389600" track="5"/>
+    <ns:hole timestamp="22608488" length="393496" track="11"/>
+    <ns:hole timestamp="22857832" length="148048" track="13"/>
+    <ns:hole timestamp="23072112" length="123155" track="3"/>
+    <ns:hole timestamp="23087696" length="310611" track="14"/>
+    <ns:hole timestamp="23278600" length="274685" track="3"/>
+    <ns:hole timestamp="23481640" length="276697" track="14"/>
+    <ns:hole timestamp="23545872" length="98821" track="5"/>
+    <ns:hole timestamp="23558226" length="79056" track="11"/>
+    <ns:hole timestamp="23847416" length="106090" track="14"/>
+    <ns:hole timestamp="24000446" length="349554" track="5"/>
+    <ns:hole timestamp="24007857" length="377987" track="11"/>
+    <ns:hole timestamp="24010328" length="165523" track="16"/>
+    <ns:hole timestamp="24257378" length="163053" track="18"/>
+    <ns:hole timestamp="24447400" length="459728" track="4"/>
+    <ns:hole timestamp="24451296" length="267307" track="13"/>
+    <ns:hole timestamp="24801936" length="298475" track="13"/>
+    <ns:hole timestamp="24926608" length="66232" track="6"/>
+    <ns:hole timestamp="24926608" length="70128" track="10"/>
+    <ns:hole timestamp="25183744" length="282891" track="13"/>
+    <ns:hole timestamp="25366856" length="169907" track="6"/>
+    <ns:hole timestamp="25370752" length="362328" track="10"/>
+    <ns:hole timestamp="25549968" length="290683" track="13"/>
+    <ns:hole timestamp="25616200" length="81816" track="0"/>
+    <ns:hole timestamp="25620096" length="109088" track="6"/>
+    <ns:hole timestamp="25822688" length="88091" track="4"/>
+    <ns:hole timestamp="25923984" length="-13205" track="13"/>
+    <ns:hole timestamp="25994112" length="268824" track="4"/>
+    <ns:hole timestamp="25994112" length="335056" track="13"/>
+    <ns:hole timestamp="26278520" length="77920" track="6"/>
+    <ns:hole timestamp="26282416" length="70128" track="10"/>
+    <ns:hole timestamp="26734352" length="381808" track="6"/>
+    <ns:hole timestamp="26734352" length="389600" track="10"/>
+    <ns:hole timestamp="26734352" length="311680" track="11"/>
+    <ns:hole timestamp="27201872" length="451936" track="1"/>
+    <ns:hole timestamp="27207651" length="403301" track="18"/>
+    <ns:hole timestamp="27657704" length="77920" track="11"/>
+    <ns:hole timestamp="27661600" length="77920" track="5"/>
+    <ns:hole timestamp="27661600" length="397392" track="16"/>
+    <ns:hole timestamp="28160288" length="319472" track="5"/>
+    <ns:hole timestamp="28160288" length="331160" track="11"/>
+    <ns:hole timestamp="28160288" length="335056" track="18"/>
+    <ns:hole timestamp="28588848" length="455868" track="3"/>
+    <ns:hole timestamp="28588848" length="171424" track="19"/>
+    <ns:hole timestamp="28819900" length="190229" track="18"/>
+    <ns:hole timestamp="29032363" length="108702" track="11"/>
+    <ns:hole timestamp="29040784" length="85458" track="5"/>
+    <ns:hole timestamp="29054598" length="167994" track="16"/>
+    <ns:hole timestamp="29286825" length="170464" track="14"/>
+    <ns:hole timestamp="29501758" length="364978" track="11"/>
+    <ns:hole timestamp="29509170" length="353670" track="5"/>
+    <ns:hole timestamp="29543368" length="124672" track="16"/>
+    <ns:hole timestamp="29714792" length="171424" track="18"/>
+    <ns:hole timestamp="29936864" length="306267" track="2"/>
+    <ns:hole timestamp="29936864" length="389600" track="21"/>
+    <ns:hole timestamp="30326464" length="81816" track="2"/>
+    <ns:hole timestamp="30412176" length="74024" track="6"/>
+    <ns:hole timestamp="30412176" length="74024" track="8"/>
+    <ns:hole timestamp="30412176" length="282891" track="19"/>
+    <ns:hole timestamp="30778400" length="175320" track="19"/>
+    <ns:hole timestamp="30864112" length="385704" track="6"/>
+    <ns:hole timestamp="30864112" length="381808" track="8"/>
+    <ns:hole timestamp="31086184" length="194800" track="11"/>
+    <ns:hole timestamp="31323840" length="459728" track="4"/>
+    <ns:hole timestamp="31323840" length="401288" track="13"/>
+    <ns:hole timestamp="31775776" length="89608" track="10"/>
+    <ns:hole timestamp="31779672" length="85712" track="7"/>
+    <ns:hole timestamp="31779672" length="187008" track="11"/>
+    <ns:hole timestamp="32001744" length="214280" track="13"/>
+    <ns:hole timestamp="32235504" length="173803" track="10"/>
+    <ns:hole timestamp="32239400" length="169907" track="7"/>
+    <ns:hole timestamp="32243296" length="159736" track="14"/>
+    <ns:hole timestamp="32492640" length="120776" track="7"/>
+    <ns:hole timestamp="32492640" length="124672" track="10"/>
+    <ns:hole timestamp="32492640" length="132464" track="16"/>
+    <ns:hole timestamp="32699128" length="401288" track="18"/>
+    <ns:hole timestamp="32706920" length="457357" track="1"/>
+    <ns:hole timestamp="33147168" length="101296" track="11"/>
+    <ns:hole timestamp="33147168" length="405184" track="16"/>
+    <ns:hole timestamp="33154960" length="93504" track="5"/>
+    <ns:hole timestamp="33595208" length="401288" track="5"/>
+    <ns:hole timestamp="33599104" length="397392" track="11"/>
+    <ns:hole timestamp="33603000" length="397392" track="18"/>
+    <ns:hole timestamp="34066624" length="495957" track="3"/>
+    <ns:hole timestamp="34078312" length="428560" track="23"/>
+    <ns:hole timestamp="34550228" length="98820" track="5"/>
+    <ns:hole timestamp="34569992" length="91409" track="11"/>
+    <ns:hole timestamp="34573104" length="2379" track="21"/>
+    <ns:hole timestamp="34658816" length="331160" track="21"/>
+    <ns:hole timestamp="35054210" length="317574" track="11"/>
+    <ns:hole timestamp="35059151" length="224816" track="4"/>
+    <ns:hole timestamp="35071504" length="300280" track="19"/>
+    <ns:hole timestamp="35251008" length="120776" track="5"/>
+    <ns:hole timestamp="35430224" length="487000" track="4"/>
+    <ns:hole timestamp="35430224" length="302371" track="18"/>
+    <ns:hole timestamp="35815928" length="278995" track="18"/>
+    <ns:hole timestamp="35905536" length="85712" track="7"/>
+    <ns:hole timestamp="35905536" length="85712" track="13"/>
+    <ns:hole timestamp="36178256" length="286787" track="18"/>
+    <ns:hole timestamp="36365264" length="374016" track="7"/>
+    <ns:hole timestamp="36365264" length="374016" track="13"/>
+    <ns:hole timestamp="36548376" length="276616" track="18"/>
+    <ns:hole timestamp="36824992" length="444144" track="4"/>
+    <ns:hole timestamp="36910704" length="327264" track="18"/>
+    <ns:hole timestamp="37121088" length="70128" track="8"/>
+    <ns:hole timestamp="37191216" length="66232" track="9"/>
+    <ns:hole timestamp="37265240" length="385704" track="7"/>
+    <ns:hole timestamp="37265240" length="389600" track="10"/>
+    <ns:hole timestamp="37717176" length="397392" track="6"/>
+    <ns:hole timestamp="37717176" length="335056" track="11"/>
+    <ns:hole timestamp="38180800" length="467520" track="1"/>
+    <ns:hole timestamp="38184696" length="286787" track="11"/>
+    <ns:hole timestamp="38188592" length="424664" track="18"/>
+    <ns:hole timestamp="38554816" length="286787" track="11"/>
+    <ns:hole timestamp="38636632" length="81816" track="5"/>
+    <ns:hole timestamp="38640528" length="77920" track="7"/>
+    <ns:hole timestamp="38644424" length="346744" track="16"/>
+    <ns:hole timestamp="38924936" length="-17101" track="11"/>
+    <ns:hole timestamp="38991168" length="208867" track="11"/>
+    <ns:hole timestamp="39037920" length="70128" track="20"/>
+    <ns:hole timestamp="39104152" length="389600" track="7"/>
+    <ns:hole timestamp="39108048" length="385704" track="5"/>
+    <ns:hole timestamp="39108048" length="397392" track="21"/>
+    <ns:hole timestamp="39283368" length="151944" track="11"/>
+    <ns:hole timestamp="39567776" length="466224" track="3"/>
+    <ns:hole timestamp="39567776" length="299992" track="8"/>
+    <ns:hole timestamp="39575568" length="190904" track="19"/>
+    <ns:hole timestamp="39801536" length="151944" track="18"/>
+    <ns:hole timestamp="39953480" length="268942" track="8"/>
+    <ns:hole timestamp="40034000" length="91409" track="5"/>
+    <ns:hole timestamp="40043882" length="167994" track="16"/>
+    <ns:hole timestamp="40053764" length="86468" track="11"/>
+    <ns:hole timestamp="40273639" length="180346" track="14"/>
+    <ns:hole timestamp="40305755" length="269568" track="8"/>
+    <ns:hole timestamp="40479440" length="370120" track="5"/>
+    <ns:hole timestamp="40479440" length="374016" track="11"/>
+    <ns:hole timestamp="40483336" length="167528" track="16"/>
+    <ns:hole timestamp="40658656" length="124672" track="8"/>
+    <ns:hole timestamp="40701512" length="171424" track="18"/>
+    <ns:hole timestamp="40915792" length="158219" track="2"/>
+    <ns:hole timestamp="40919688" length="154323" track="6"/>
+    <ns:hole timestamp="40927480" length="146531" track="21"/>
+    <ns:hole timestamp="41157344" length="233760" track="2"/>
+    <ns:hole timestamp="41157344" length="53027" track="6"/>
+    <ns:hole timestamp="41157344" length="171424" track="21"/>
+    <ns:hole timestamp="41293704" length="298475" track="6"/>
+    <ns:hole timestamp="41379416" length="89608" track="11"/>
+    <ns:hole timestamp="41383312" length="77920" track="8"/>
+    <ns:hole timestamp="41387208" length="298475" track="19"/>
+    <ns:hole timestamp="41675512" length="282891" track="6"/>
+    <ns:hole timestamp="41769016" length="167528" track="19"/>
+    <ns:hole timestamp="41858624" length="366224" track="8"/>
+    <ns:hole timestamp="41858624" length="109088" track="11"/>
+    <ns:hole timestamp="42041736" length="128568" track="6"/>
+    <ns:hole timestamp="42084592" length="171424" track="11"/>
+    <ns:hole timestamp="42310560" length="467520" track="4"/>
+    <ns:hole timestamp="42318352" length="275099" track="10"/>
+    <ns:hole timestamp="42318352" length="393496" track="13"/>
+    <ns:hole timestamp="42676784" length="271203" track="10"/>
+    <ns:hole timestamp="42766392" length="77920" track="7"/>
+    <ns:hole timestamp="42766392" length="183112" track="11"/>
+    <ns:hole timestamp="42988464" length="206488" track="13"/>
+    <ns:hole timestamp="43031320" length="286787" track="10"/>
+    <ns:hole timestamp="43222224" length="17963" track="7"/>
+    <ns:hole timestamp="43226120" length="14067" track="14"/>
+    <ns:hole timestamp="43323520" length="288304" track="7"/>
+    <ns:hole timestamp="43323520" length="58440" track="14"/>
+    <ns:hole timestamp="43401440" length="132464" track="10"/>
+    <ns:hole timestamp="43448192" length="167528" track="16"/>
+    <ns:hole timestamp="43681952" length="475312" track="1"/>
+    <ns:hole timestamp="43689744" length="275099" track="11"/>
+    <ns:hole timestamp="43689744" length="405184" track="18"/>
+    <ns:hole timestamp="44048176" length="275099" track="11"/>
+    <ns:hole timestamp="44141680" length="85712" track="7"/>
+    <ns:hole timestamp="44141680" length="389600" track="16"/>
+    <ns:hole timestamp="44145576" length="77920" track="5"/>
+    <ns:hole timestamp="44406608" length="475312" track="11"/>
+    <ns:hole timestamp="44589720" length="374016" track="5"/>
+    <ns:hole timestamp="44589720" length="377912" track="7"/>
+    <ns:hole timestamp="44601408" length="374016" track="18"/>
+    <ns:hole timestamp="44878024" length="93504" track="12"/>
+    <ns:hole timestamp="44963736" length="97400" track="13"/>
+    <ns:hole timestamp="45041656" length="510209" track="3"/>
+    <ns:hole timestamp="45053344" length="389600" track="14"/>
+    <ns:hole timestamp="45061136" length="389600" track="23"/>
+    <ns:hole timestamp="45512337" length="91409" track="5"/>
+    <ns:hole timestamp="45528656" length="288217" track="13"/>
+    <ns:hole timestamp="45528656" length="127051" track="21"/>
+    <ns:hole timestamp="45529631" length="96349" track="8"/>
+    <ns:hole timestamp="45739040" length="64715" track="21"/>
+    <ns:hole timestamp="45887088" length="214280" track="21"/>
+    <ns:hole timestamp="45900206" length="224816" track="13"/>
+    <ns:hole timestamp="45972800" length="374016" track="5"/>
+    <ns:hole timestamp="46000072" length="350640" track="8"/>
+    <ns:hole timestamp="46194872" length="171424" track="11"/>
+    <ns:hole timestamp="46194872" length="171424" track="19"/>
+    <ns:hole timestamp="46413048" length="471416" track="4"/>
+    <ns:hole timestamp="46416944" length="294579" track="10"/>
+    <ns:hole timestamp="46416944" length="294579" track="18"/>
+    <ns:hole timestamp="46794856" length="271203" track="10"/>
+    <ns:hole timestamp="46794856" length="275099" track="18"/>
+    <ns:hole timestamp="46880568" length="74024" track="7"/>
+    <ns:hole timestamp="46884464" length="81816" track="13"/>
+    <ns:hole timestamp="47149392" length="377912" track="10"/>
+    <ns:hole timestamp="47153288" length="381808" track="18"/>
+    <ns:hole timestamp="47344192" length="228347" track="7"/>
+    <ns:hole timestamp="47348088" length="237656" track="13"/>
+    <ns:hole timestamp="47655872" length="54544" track="7"/>
+    <ns:hole timestamp="47655872" length="70128" track="11"/>
+    <ns:hole timestamp="47726000" length="66232" track="12"/>
+    <ns:hole timestamp="47803920" length="412976" track="13"/>
+    <ns:hole timestamp="47807816" length="138739" track="4"/>
+    <ns:hole timestamp="48029888" length="-20997" track="4"/>
+    <ns:hole timestamp="48092224" length="167528" track="4"/>
+    <ns:hole timestamp="48263648" length="74024" track="7"/>
+    <ns:hole timestamp="48263648" length="77920" track="10"/>
+    <ns:hole timestamp="48263648" length="389600" track="14"/>
+    <ns:hole timestamp="48700000" length="389600" track="7"/>
+    <ns:hole timestamp="48703896" length="389600" track="10"/>
+    <ns:hole timestamp="48715584" length="385704" track="21"/>
+    <ns:hole timestamp="49167520" length="150427" track="1"/>
+    <ns:hole timestamp="49183104" length="278995" track="18"/>
+    <ns:hole timestamp="49401280" length="218176" track="1"/>
+    <ns:hole timestamp="49401280" length="183112" track="5"/>
+    <ns:hole timestamp="49545432" length="229864" track="18"/>
+    <ns:hole timestamp="49623352" length="198696" track="7"/>
+    <ns:hole timestamp="49627248" length="194800" track="10"/>
+    <ns:hole timestamp="49864904" length="187008" track="5"/>
+    <ns:hole timestamp="50090872" length="179216" track="7"/>
+    <ns:hole timestamp="50090872" length="183112" track="10"/>
+    <ns:hole timestamp="50094768" length="385704" track="21"/>
+    <ns:hole timestamp="50328528" length="183112" track="5"/>
+    <ns:hole timestamp="50546704" length="204502" track="3"/>
+    <ns:hole timestamp="50554496" length="300471" track="14"/>
+    <ns:hole timestamp="50772672" length="194800" track="5"/>
+    <ns:hole timestamp="50834539" length="200110" track="3"/>
+    <ns:hole timestamp="50938300" length="286578" track="14"/>
+    <ns:hole timestamp="51024767" length="187758" track="11"/>
+    <ns:hole timestamp="51025912" length="176731" track="8"/>
+    <ns:hole timestamp="51254524" length="190228" track="5"/>
+    <ns:hole timestamp="51462264" length="175320" track="8"/>
+    <ns:hole timestamp="51462264" length="354536" track="19"/>
+    <ns:hole timestamp="51466160" length="175320" track="11"/>
+    <ns:hole timestamp="51684336" length="202592" track="5"/>
+    <ns:hole timestamp="51914200" length="-9309" track="18"/>
+    <ns:hole timestamp="51918096" length="-13205" track="1"/>
+    <ns:hole timestamp="51988224" length="377912" track="1"/>
+    <ns:hole timestamp="51988224" length="208867" track="18"/>
+    <ns:hole timestamp="52136272" length="187008" track="5"/>
+    <ns:hole timestamp="52280424" length="286787" track="18"/>
+    <ns:hole timestamp="52370032" length="202592" track="7"/>
+    <ns:hole timestamp="52373928" length="194800" track="11"/>
+    <ns:hole timestamp="52599896" length="187008" track="5"/>
+    <ns:hole timestamp="52650544" length="428560" track="18"/>
+    <ns:hole timestamp="52821968" length="202592" track="7"/>
+    <ns:hole timestamp="52829760" length="190904" track="11"/>
+    <ns:hole timestamp="53055728" length="194800" track="5"/>
+    <ns:hole timestamp="53118064" length="58440" track="19"/>
+    <ns:hole timestamp="53219360" length="50648" track="18"/>
+    <ns:hole timestamp="53289488" length="49131" track="1"/>
+    <ns:hole timestamp="53297280" length="409080" track="13"/>
+    <ns:hole timestamp="53421952" length="331160" track="1"/>
+    <ns:hole timestamp="53523248" length="187008" track="5"/>
+    <ns:hole timestamp="53737528" length="198696" track="7"/>
+    <ns:hole timestamp="53741424" length="194800" track="11"/>
+    <ns:hole timestamp="53745320" length="397392" track="14"/>
+    <ns:hole timestamp="53982976" length="171424" track="5"/>
+    <ns:hole timestamp="54201152" length="187008" track="11"/>
+    <ns:hole timestamp="54205048" length="183112" track="7"/>
+    <ns:hole timestamp="54216736" length="393496" track="21"/>
+    <ns:hole timestamp="54423224" length="206488" track="5"/>
+    <ns:hole timestamp="54668672" length="463624" track="1"/>
+    <ns:hole timestamp="54672568" length="278995" track="18"/>
+    <ns:hole timestamp="54886848" length="210384" track="5"/>
+    <ns:hole timestamp="55034896" length="350640" track="18"/>
+    <ns:hole timestamp="55120608" length="194800" track="7"/>
+    <ns:hole timestamp="55120608" length="190904" track="10"/>
+    <ns:hole timestamp="55342680" length="210384" track="5"/>
+    <ns:hole timestamp="55584232" length="190904" track="10"/>
+    <ns:hole timestamp="55588128" length="183112" track="7"/>
+    <ns:hole timestamp="55588128" length="374016" track="21"/>
+    <ns:hole timestamp="55814096" length="179216" track="5"/>
+    <ns:hole timestamp="56047856" length="189387" track="3"/>
+    <ns:hole timestamp="56047856" length="278995" track="14"/>
+    <ns:hole timestamp="56269928" length="-32685" track="5"/>
+    <ns:hole timestamp="56320576" length="163632" track="3"/>
+    <ns:hole timestamp="56320576" length="136360" track="5"/>
+    <ns:hole timestamp="56410184" length="404945" track="14"/>
+    <ns:hole timestamp="56503688" length="175320" track="11"/>
+    <ns:hole timestamp="56507584" length="213666" track="8"/>
+    <ns:hole timestamp="56741344" length="10171" track="5"/>
+    <ns:hole timestamp="56834848" length="74024" track="5"/>
+    <ns:hole timestamp="56943936" length="206488" track="8"/>
+    <ns:hole timestamp="56943936" length="202592" track="11"/>
+    <ns:hole timestamp="56959520" length="342848" track="23"/>
+    <ns:hole timestamp="57177696" length="187008" track="5"/>
+    <ns:hole timestamp="57391976" length="471416" track="2"/>
+    <ns:hole timestamp="57407560" length="282891" track="25"/>
+    <ns:hole timestamp="57633528" length="194800" track="7"/>
+    <ns:hole timestamp="57773784" length="294579" track="25"/>
+    <ns:hole timestamp="57855600" length="194800" track="16"/>
+    <ns:hole timestamp="57859496" length="194800" track="13"/>
+    <ns:hole timestamp="58104944" length="183112" track="7"/>
+    <ns:hole timestamp="58151696" length="229864" track="25"/>
+    <ns:hole timestamp="58323120" length="241124" track="13"/>
+    <ns:hole timestamp="58323120" length="241124" track="16"/>
+    <ns:hole timestamp="58549088" length="198696" track="7"/>
+    <ns:hole timestamp="58584152" length="54544" track="23"/>
+    <ns:hole timestamp="58654280" length="50648" track="24"/>
+    <ns:hole timestamp="58728304" length="58440" track="25"/>
+    <ns:hole timestamp="58775056" length="685696" track="16"/>
+    <ns:hole timestamp="58786744" length="259515" track="2"/>
+    <ns:hole timestamp="58786744" length="681800" track="26"/>
+    <ns:hole timestamp="59001024" length="101296" track="7"/>
+    <ns:hole timestamp="59129592" length="389600" track="2"/>
+    <ns:hole timestamp="59289328" length="198696" track="7"/>
+    <ns:hole timestamp="59515296" length="120776" track="18"/>
+    <ns:hole timestamp="59519192" length="99779" track="13"/>
+    <ns:hole timestamp="59526984" length="97400" track="25"/>
+    <ns:hole timestamp="59634465" length="64233" track="7"/>
+    <ns:hole timestamp="59702304" length="187008" track="13"/>
+    <ns:hole timestamp="59702304" length="187008" track="16"/>
+    <ns:hole timestamp="59702304" length="366224" track="19"/>
+    <ns:hole timestamp="59710096" length="354536" track="23"/>
+    <ns:hole timestamp="59920480" length="187008" track="7"/>
+    <ns:hole timestamp="60154240" length="278995" track="18"/>
+    <ns:hole timestamp="60158136" length="448040" track="1"/>
+    <ns:hole timestamp="60158136" length="282891" track="21"/>
+    <ns:hole timestamp="60384104" length="187008" track="5"/>
+    <ns:hole timestamp="60516568" length="53027" track="18"/>
+    <ns:hole timestamp="60524360" length="45235" track="21"/>
+    <ns:hole timestamp="60652928" length="155840" track="7"/>
+    <ns:hole timestamp="60652928" length="155840" track="10"/>
+    <ns:hole timestamp="60652928" length="183112" track="18"/>
+    <ns:hole timestamp="60652928" length="319472" track="21"/>
+    <ns:hole timestamp="60828248" length="74024" track="17"/>
+    <ns:hole timestamp="60843832" length="183112" track="5"/>
+    <ns:hole timestamp="60910064" length="74024" track="16"/>
+    <ns:hole timestamp="60984088" length="77920" track="15"/>
+    <ns:hole timestamp="61065904" length="202592" track="7"/>
+    <ns:hole timestamp="61065904" length="206488" track="10"/>
+    <ns:hole timestamp="61065904" length="370120" track="14"/>
+    <ns:hole timestamp="61069800" length="401288" track="18"/>
+    <ns:hole timestamp="61311352" length="175320" track="5"/>
+    <ns:hole timestamp="61529528" length="471416" track="3"/>
+    <ns:hole timestamp="61529528" length="358432" track="11"/>
+    <ns:hole timestamp="61529528" length="315576" track="14"/>
+    <ns:hole timestamp="61774976" length="175320" track="5"/>
+    <ns:hole timestamp="61930055" length="382569" track="14"/>
+    <ns:hole timestamp="62000944" length="208277" track="8"/>
+    <ns:hole timestamp="62009111" length="212463" track="11"/>
+    <ns:hole timestamp="62219120" length="190904" track="5"/>
+    <ns:hole timestamp="62261976" length="105192" track="9"/>
+    <ns:hole timestamp="62332104" length="112984" track="10"/>
+    <ns:hole timestamp="62429504" length="202592" track="8"/>
+    <ns:hole timestamp="62433400" length="338952" track="11"/>
+    <ns:hole timestamp="62433400" length="338952" track="19"/>
+    <ns:hole timestamp="62651576" length="84195" track="5"/>
+    <ns:hole timestamp="62819104" length="50648" track="5"/>
+    <ns:hole timestamp="62893128" length="475312" track="2"/>
+    <ns:hole timestamp="62893128" length="416872" track="18"/>
+    <ns:hole timestamp="62897024" length="366224" track="13"/>
+    <ns:hole timestamp="63111304" length="218176" track="7"/>
+    <ns:hole timestamp="63356752" length="194800" track="6"/>
+    <ns:hole timestamp="63356752" length="288304" track="13"/>
+    <ns:hole timestamp="63360648" length="346744" track="16"/>
+    <ns:hole timestamp="63574928" length="206488" track="7"/>
+    <ns:hole timestamp="63820376" length="194800" track="6"/>
+    <ns:hole timestamp="63820376" length="354536" track="13"/>
+    <ns:hole timestamp="63824272" length="350640" track="23"/>
+    <ns:hole timestamp="64038552" length="190904" track="7"/>
+    <ns:hole timestamp="64260624" length="463624" track="1"/>
+    <ns:hole timestamp="64268416" length="362328" track="11"/>
+    <ns:hole timestamp="64272312" length="275099" track="14"/>
+    <ns:hole timestamp="64494384" length="190904" track="5"/>
+    <ns:hole timestamp="64630744" length="327264" track="14"/>
+    <ns:hole timestamp="64712560" length="214280" track="7"/>
+    <ns:hole timestamp="64720352" length="210384" track="11"/>
+    <ns:hole timestamp="64985280" length="155840" track="5"/>
+    <ns:hole timestamp="64996968" length="101296" track="9"/>
+    <ns:hole timestamp="65082680" length="101296" track="10"/>
+    <ns:hole timestamp="65172288" length="218176" track="7"/>
+    <ns:hole timestamp="65172288" length="338952" track="11"/>
+    <ns:hole timestamp="65180080" length="319472" track="18"/>
+    <ns:hole timestamp="65421632" length="190904" track="5"/>
+    <ns:hole timestamp="65635912" length="475312" track="3"/>
+    <ns:hole timestamp="65639808" length="335056" track="8"/>
+    <ns:hole timestamp="65643704" length="282891" track="11"/>
+    <ns:hole timestamp="65881360" length="187008" track="5"/>
+    <ns:hole timestamp="66009928" length="385704" track="11"/>
+    <ns:hole timestamp="66099536" length="194800" track="8"/>
+    <ns:hole timestamp="66321608" length="210384" track="5"/>
+    <ns:hole timestamp="66403424" length="70128" track="12"/>
+    <ns:hole timestamp="66481344" length="74024" track="13"/>
+    <ns:hole timestamp="66563160" length="190904" track="8"/>
+    <ns:hole timestamp="66567056" length="374016" track="11"/>
+    <ns:hole timestamp="66567056" length="381808" track="14"/>
+    <ns:hole timestamp="66789128" length="206488" track="5"/>
+    <ns:hole timestamp="67026784" length="41339" track="2"/>
+    <ns:hole timestamp="67030680" length="37443" track="7"/>
+    <ns:hole timestamp="67030680" length="37443" track="13"/>
+    <ns:hole timestamp="67151456" length="331160" track="2"/>
+    <ns:hole timestamp="67151456" length="311680" track="7"/>
+    <ns:hole timestamp="67151456" length="148048" track="13"/>
+    <ns:hole timestamp="67318984" length="58440" track="14"/>
+    <ns:hole timestamp="67396904" length="81816" track="13"/>
+    <ns:hole timestamp="67494304" length="366224" track="9"/>
+    <ns:hole timestamp="67502096" length="354536" track="11"/>
+    <ns:hole timestamp="67942344" length="350640" track="7"/>
+    <ns:hole timestamp="67946240" length="350640" track="13"/>
+    <ns:hole timestamp="68172208" length="81816" track="15"/>
+    <ns:hole timestamp="68238440" length="70128" track="16"/>
+    <ns:hole timestamp="68312464" length="70128" track="17"/>
+    <ns:hole timestamp="68378696" length="471416" track="1"/>
+    <ns:hole timestamp="68386488" length="286787" track="11"/>
+    <ns:hole timestamp="68390384" length="428560" track="18"/>
+    <ns:hole timestamp="68756608" length="420768" track="11"/>
+    <ns:hole timestamp="68842320" length="85712" track="5"/>
+    <ns:hole timestamp="68842320" length="85712" track="7"/>
+    <ns:hole timestamp="68850112" length="290683" track="16"/>
+    <ns:hole timestamp="69224128" length="10171" track="16"/>
+    <ns:hole timestamp="69317632" length="381808" track="5"/>
+    <ns:hole timestamp="69317632" length="377912" track="7"/>
+    <ns:hole timestamp="69317632" length="163632" track="16"/>
+    <ns:hole timestamp="69547496" length="163632" track="13"/>
+    <ns:hole timestamp="69757880" length="471416" track="3"/>
+    <ns:hole timestamp="69765672" length="286787" track="14"/>
+    
+    <ns:hole timestamp="70135792" length="275099" track="14"/>
+    <ns:hole timestamp="70221504" length="85712" track="5"/>
+    <ns:hole timestamp="70221504" length="89608" track="11"/>
+    <ns:hole timestamp="70494224" length="459728" track="14"/>
+    <ns:hole timestamp="70677336" length="401288" track="5"/>
+    <ns:hole timestamp="70677336" length="397392" track="11"/>
+    <ns:hole timestamp="71148752" length="251723" track="2"/>
+    <ns:hole timestamp="71148752" length="251723" track="26"/>
+    <ns:hole timestamp="71483808" length="128568" track="2"/>
+    <ns:hole timestamp="71483808" length="85712" track="26"/>
+    <ns:hole timestamp="71604584" length="89608" track="8"/>
+    <ns:hole timestamp="71604584" length="85712" track="11"/>
+    <ns:hole timestamp="71604584" length="275099" track="25"/>
+    <ns:hole timestamp="71963016" length="284408" track="25"/>
+    <ns:hole timestamp="72044832" length="397392" track="8"/>
+    <ns:hole timestamp="72044832" length="393496" track="11"/>
+    <ns:hole timestamp="72290280" length="175320" track="22"/>
+    <ns:hole timestamp="72508456" length="497598" track="2"/>
+    <ns:hole timestamp="72524040" length="397392" track="23"/>
+    <ns:hole timestamp="72991560" length="98491" track="7"/>
+    <ns:hole timestamp="72991560" length="401288" track="22"/>
+    <ns:hole timestamp="72998643" length="76585" track="13"/>
+    <ns:hole timestamp="73416224" length="150427" track="7"/>
+    <ns:hole timestamp="73420120" length="146531" track="13"/>
+    <ns:hole timestamp="73649984" length="171424" track="7"/>
+    <ns:hole timestamp="73649984" length="171424" track="13"/>
+    <ns:hole timestamp="73875952" length="475312" track="1"/>
+    <ns:hole timestamp="73875952" length="420768" track="18"/>
+    <ns:hole timestamp="74335680" length="93504" track="7"/>
+    <ns:hole timestamp="74339576" length="89608" track="5"/>
+    <ns:hole timestamp="74339576" length="294579" track="16"/>
+    <ns:hole timestamp="74717488" length="241552" track="16"/>
+    <ns:hole timestamp="74795408" length="385704" track="7"/>
+    <ns:hole timestamp="74799304" length="381808" track="5"/>
+    <ns:hole timestamp="75036960" length="155840" track="13"/>
+    <ns:hole timestamp="75255136" length="475312" track="3"/>
+    <ns:hole timestamp="75259032" length="275099" track="14"/>
+    <ns:hole timestamp="75617464" length="115363" track="14"/>
+    <ns:hole timestamp="75699280" length="112984" track="8"/>
+    <ns:hole timestamp="75718760" length="89608" track="5"/>
+    <ns:hole timestamp="75816160" length="84195" track="14"/>
+    <ns:hole timestamp="75983688" length="144152" track="14"/>
+    <ns:hole timestamp="76155112" length="401288" track="5"/>
+    <ns:hole timestamp="76159008" length="393496" track="8"/>
+    <ns:hole timestamp="76166800" length="198696" track="16"/>
+    <ns:hole timestamp="76404456" length="175320" track="18"/>
+    <ns:hole timestamp="76622632" length="479208" track="4"/>
+    <ns:hole timestamp="76634320" length="278995" track="13"/>
+    <ns:hole timestamp="76996648" length="290683" track="13"/>
+    <ns:hole timestamp="77078464" length="93504" track="6"/>
+    <ns:hole timestamp="77082360" length="97400" track="10"/>
+    <ns:hole timestamp="77370664" length="275099" track="13"/>
+    <ns:hole timestamp="77542088" length="393496" track="6"/>
+    <ns:hole timestamp="77545984" length="393496" track="10"/>
+    <ns:hole timestamp="77729096" length="169907" track="13"/>
+    <ns:hole timestamp="77982336" length="49131" track="13"/>
+    <ns:hole timestamp="78009608" length="158219" track="4"/>
+    <ns:hole timestamp="78114800" length="443706" track="13"/>
+    <ns:hole timestamp="78251160" length="225968" track="4"/>
+    <ns:hole timestamp="78481024" length="74024" track="6"/>
+    <ns:hole timestamp="78494273" length="125996" track="10"/>
+    <ns:hole timestamp="78657326" length="83997" track="14"/>
+    <ns:hole timestamp="78726500" length="81527" track="15"/>
+    <ns:hole timestamp="78784912" length="81816" track="16"/>
+    <ns:hole timestamp="78847248" length="85712" track="17"/>
+    <ns:hole timestamp="78921272" length="393496" track="10"/>
+    
+    <ns:hole timestamp="78925168" length="374016" track="6"/>
+    <ns:hole timestamp="78925168" length="323368" track="18"/>
+    <ns:hole timestamp="79384896" length="459728" track="1"/>
+    <ns:hole timestamp="79384896" length="272720" track="18"/>
+    <ns:hole timestamp="79657616" length="81816" track="19"/>
+    <ns:hole timestamp="79743328" length="74024" track="18"/>
+    <ns:hole timestamp="79825144" length="109088" track="5"/>
+    <ns:hole timestamp="79825144" length="109088" track="11"/>
+    <ns:hole timestamp="79829040" length="236139" track="16"/>
+    <ns:hole timestamp="80148512" length="89608" track="16"/>
+    <ns:hole timestamp="80280976" length="405184" track="11"/>
+    <ns:hole timestamp="80288768" length="393496" track="5"/>
+    <ns:hole timestamp="80296560" length="393496" track="18"/>
+    <ns:hole timestamp="80744600" length="471416" track="3"/>
+    <ns:hole timestamp="80748496" length="222072" track="19"/>
+    <ns:hole timestamp="80978360" length="202592" track="18"/>
+    <ns:hole timestamp="81196536" length="105192" track="11"/>
+    <ns:hole timestamp="81200432" length="89608" track="5"/>
+    <ns:hole timestamp="81200432" length="202592" track="16"/>
+    <ns:hole timestamp="81441984" length="179216" track="14"/>
+    <ns:hole timestamp="81656264" length="405184" track="11"/>
+    <ns:hole timestamp="81660160" length="405184" track="5"/>
+    <ns:hole timestamp="81664056" length="179216" track="16"/>
+    <ns:hole timestamp="81886128" length="194800" track="18"/>
+    <ns:hole timestamp="82131576" length="99779" track="2"/>
+    <ns:hole timestamp="82131576" length="99779" track="21"/>
+    <ns:hole timestamp="82314688" length="284408" track="2"/>
+    <ns:hole timestamp="82314688" length="229864" track="21"/>
+    <ns:hole timestamp="82583512" length="93504" track="6"/>
+    <ns:hole timestamp="82583512" length="93504" track="8"/>
+    <ns:hole timestamp="82583512" length="282891" track="19"/>
+    <ns:hole timestamp="82949736" length="187008" track="19"/>
+    <ns:hole timestamp="83039344" length="381808" track="6"/>
+    <ns:hole timestamp="83043240" length="377912" track="8"/>
+    <ns:hole timestamp="83265312" length="190904" track="11"/>
+    <ns:hole timestamp="83502968" length="119259" track="4"/>
+    <ns:hole timestamp="83506864" length="393496" track="13"/>
+    <ns:hole timestamp="83705560" length="249344" track="4"/>
+    <ns:hole timestamp="83947112" length="105192" track="10"/>
+    <ns:hole timestamp="83951008" length="97400" track="7"/>
+    <ns:hole timestamp="83966592" length="17963" track="11"/>
+    <ns:hole timestamp="84067888" length="81816" track="11"/>
+    <ns:hole timestamp="84180872" length="198696" track="13"/>
+    <ns:hole timestamp="84395152" length="2379" track="7"/>
+    <ns:hole timestamp="84399048" length="-1517" track="10"/>
+    <ns:hole timestamp="84402944" length="-5413" track="14"/>
+    <ns:hole timestamp="84480864" length="319472" track="7"/>
+    <ns:hole timestamp="84480864" length="323368" track="10"/>
+    <ns:hole timestamp="84480864" length="97400" track="14"/>
+    <ns:hole timestamp="84632808" length="171424" track="16"/>
+    <ns:hole timestamp="84858776" length="475312" track="1"/>
+    <ns:hole timestamp="84858776" length="428560" track="18"/>
+    <ns:hole timestamp="85318504" length="416872" track="16"/>
+    <ns:hole timestamp="85322400" length="85712" track="5"/>
+    <ns:hole timestamp="85322400" length="93504" track="11"/>
+    <ns:hole timestamp="85778232" length="401288" track="11"/>
+    <ns:hole timestamp="85782128" length="397392" track="5"/>
+    <ns:hole timestamp="85786024" length="397392" track="18"/>
+    <ns:hole timestamp="86241856" length="495430" track="3"/>
+    <ns:hole timestamp="86245752" length="474303" track="23"/>
+    <ns:hole timestamp="86717584" length="103761" track="5"/>
+    <ns:hole timestamp="86724996" length="98820" track="11"/>
+    <ns:hole timestamp="86739819" length="385398" track="21"/>
+    <ns:hole timestamp="87174627" length="415044" track="19"/>
+    <ns:hole timestamp="87177097" length="380458" track="5"/>
+    <ns:hole timestamp="87177097" length="390340" track="11"/>
+    <ns:hole timestamp="87634139" length="476808" track="4"/>
+    <ns:hole timestamp="87646493" length="297124" track="18"/>
+    <ns:hole timestamp="88026950" length="282301" track="18"/>
+    <ns:hole timestamp="88076360" length="130937" track="7"/>
+    <ns:hole timestamp="88088713" length="123525" track="13"/>
+    <ns:hole timestamp="88392584" length="281807" track="18"/>
+    <ns:hole timestamp="88547732" length="284107" track="7"/>
+    <ns:hole timestamp="88569966" length="254462" track="13"/>
+    <ns:hole timestamp="88757724" length="69174" track="18"/> 
+  </ns:holes>
+</ns:virtualBook>

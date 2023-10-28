@@ -19,7 +19,7 @@ pub struct Holes {
     pub holes: Vec<Hole>,
 }
 
-#[derive(Default, Debug, YaSerialize, YaDeserialize, PartialEq)]
+#[derive(Default, Debug, YaSerialize, YaDeserialize, PartialEq, Clone)]
 #[yaserde(
     prefix = "ns",
     namespace = "ns: http://barrelorgandiscovery.org/virtualbook/2016"
@@ -51,12 +51,13 @@ pub struct VirtualBook {
     pub scale: Scale,
 }
 
+#[profiling::all_functions]
 impl VirtualBook {
     pub fn min_time(&self) -> Option<i64> {
         self.holes
             .holes
             .iter()
-            .map(|h| h.timestamp + h.length)
+            .map(|h| h.timestamp)
             .reduce(|h, a| h.min(a))
     }
 
@@ -94,6 +95,7 @@ impl VirtualBook {
                     scaletype: "".into(),
                     tracknb: 128,
                     bookmovefromrighttoleft: false,
+                    ispreferredviewinverted: false,
                 },
             },
         }
@@ -172,6 +174,13 @@ pub struct ScaleDefinition {
         namespace = "ns: http://barrelorgandiscovery.org/virtualbook/2016"
     )]
     pub bookmovefromrighttoleft: bool,
+
+    #[yaserde(child, default = false)]
+    #[yaserde(
+        prefix = "ns",
+        namespace = "ns: http://barrelorgandiscovery.org/virtualbook/2016"
+    )]
+    pub ispreferredviewinverted: bool,
 }
 
 #[derive(Default, Debug, YaSerialize, YaDeserialize, PartialEq)]
